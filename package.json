@@ -1,0 +1,42 @@
+{
+  "name": "@sergeyzwezdin/react-modals",
+  "version": "0.0.0-development",
+  "description": "Utility package to handle modals in React",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*.*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build",
+    "semantic-release": "semantic-release",
+    "lint": "prettier --check \"*.{js,json,md}\"",
+    "lint:fix": "prettier --write \"*.{js,json,md}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergeyzwezdin/react-modals.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Sergey Zwezdin <sergey@zwezdin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergeyzwezdin/react-modals/issues"
+  },
+  "homepage": "https://github.com/sergeyzwezdin/react-modals#readme",
+  "devDependencies": {
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.2.5",
+    "@semantic-release/npm": "11.0.2",
+    "@sergeyzwezdin/semantic-release-commits-config": "1.0.2",
+    "@trivago/prettier-plugin-sort-imports": "4.3.0",
+    "@types/react": "18.2.45",
+    "prettier": "3.1.1",
+    "react": "18.2.0",
+    "semantic-release": "22.0.12",
+    "semantic-release-telegram-bot": "2.0.1",
+    "typescript": "5.3.3"
+  }
+}
