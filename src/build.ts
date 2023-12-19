@@ -31,7 +31,7 @@ export const build = <Modals extends Record<ModalNames, ModuleComponent>, ModalN
 
     const middleware = {
         effects: {
-            newModals: {
+            modals: {
                 show
             }
         }
