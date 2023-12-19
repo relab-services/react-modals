@@ -1,6 +1,6 @@
 {
   "name": "@sergeyzwezdin/react-modals",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Utility package to handle modals in React",
   "main": "lib/index.js",
   "files": [
