@@ -1,4 +1,4 @@
-const common = require('@sergeyzwezdin/semantic-release-commits-config');
+const common = require('@sergeyzwezdin/semantic-release-commits-config')
 
 module.exports = {
     ...common,
@@ -9,8 +9,8 @@ module.exports = {
             '@semantic-release/git',
             {
                 assets: ['package.json', 'package-lock.json'],
-                message: 'Update package.json version to ${nextRelease.version}'
-            }
+                message: 'Update package.json version to ${nextRelease.version}',
+            },
         ],
         '@semantic-release/github',
         [
@@ -18,10 +18,10 @@ module.exports = {
             {
                 notifications: [
                     {
-                        chatIds: process.env.TELEGRAM_BOT_CHAT_ID
-                    }
-                ]
-            }
-        ]
-    ]
-};
+                        chatIds: process.env.TELEGRAM_BOT_CHAT_ID,
+                    },
+                ],
+            },
+        ],
+    ],
+}

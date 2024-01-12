@@ -1,5 +1,13 @@
-import { FC } from 'react';
+import { FC } from 'react'
 
-import { ModalProps } from './props';
+import { ModalProps } from './props'
 
-export type ModalParams<T> = T extends FC<infer Props> ? (Props extends ModalProps<infer TParams, infer _> ? TParams : never) : never;
+export type ModalParams<T> = T extends FC<infer Props>
+    ? Props extends ModalProps<
+          infer TParams,
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          infer _
+      >
+        ? TParams
+        : never
+    : never
