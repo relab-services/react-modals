@@ -5,18 +5,32 @@ import typescript from '@rollup/plugin-typescript'
 import del from 'rollup-plugin-delete'
 import { dts } from 'rollup-plugin-dts'
 import external from 'rollup-plugin-peer-deps-external'
+import preserveDirectives from 'rollup-preserve-directives'
 
 export default [
     {
         input: 'src/index.ts',
         output: [
             {
-                file: 'lib/index.js',
+                dir: 'lib',
                 format: 'cjs',
                 name: 'lib',
+                preserveModules: true,
             },
         ],
-        plugins: [del({ targets: 'lib/*' }), external(), resolve(), commonjs(), typescript({ tsconfig: './tsconfig.json' }), terser()],
+        plugins: [
+            del({ targets: 'lib/*' }),
+            external(),
+            resolve(),
+            commonjs(),
+            typescript({ tsconfig: './tsconfig.json' }),
+            preserveDirectives(),
+            terser({
+                compress: {
+                    directives: false,
+                },
+            }),
+        ],
     },
     {
         input: 'lib/types/index.d.ts',

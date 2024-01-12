@@ -1,3 +1,5 @@
+'use client'
+
 import React, { FC, Fragment, useEffect, useState } from 'react'
 
 import { ModalRegistry } from '../registry'

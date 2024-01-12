@@ -47,6 +47,7 @@
     "rollup-plugin-delete": "2.0.0",
     "rollup-plugin-dts": "6.1.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
+    "rollup-preserve-directives": "1.1.1",
     "semantic-release": "22.0.12",
     "semantic-release-telegram-bot": "2.0.1",
     "tslib": "2.6.2",
