@@ -1,6 +1,6 @@
 {
   "name": "@sergeyzwezdin/react-modals",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utility package to handle modals in React",
   "main": "lib/index.js",
   "files": [
@@ -49,6 +49,8 @@
   "prettier": "@sergeyzwezdin/prettier-config",
   "eslintConfig": {
     "extends": "@sergeyzwezdin/eslint-config/node",
-    "ignorePatterns": ["lib"]
+    "ignorePatterns": [
+      "lib"
+    ]
   }
 }
