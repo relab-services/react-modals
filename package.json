@@ -38,7 +38,6 @@
     "@sergeyzwezdin/eslint-config": "2.2.1",
     "@sergeyzwezdin/prettier-config": "1.1.1",
     "@sergeyzwezdin/semantic-release-commits-config": "1.0.2",
-    "@trivago/prettier-plugin-sort-imports": "4.3.0",
     "@types/react": "18.2.45",
     "eslint": "8.56.0",
     "react": "18.2.0",
