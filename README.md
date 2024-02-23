@@ -1,4 +1,4 @@
-# @sergeyzwezdin/react-modals
+# @relab/react-modals
 
 Utility package to handle modals in React in conjunction with Overmind JS.
 
@@ -9,7 +9,7 @@ It allows to have type inference when call `show()` effect - Typescript checks a
 
 ## Usage
 
-1. `npm install --save @sergeyzwezdin/react-modals`
+1. `npm install --save @relab/react-modals`
 2. Create `@modals` folder
 
 **config.ts**
@@ -21,7 +21,7 @@ export * from '@/components/modal3'
 
 **index.ts**
 ```typescript
-import { build } from '@sergeyzwezdin/react-modals'
+import { build } from '@relab/react-modals'
 
 import * as Modules from './config'
 
@@ -78,7 +78,7 @@ export * from './modal1'
 **components/modal1/modal1.tsx**
 ```typescript jsx
 import { FC } from 'react'
-import { ModalProps } from '@sergeyzwezdin/react-modals'
+import { ModalProps } from '@relab/react-modals'
 
 type Modal1Params = {
     message: string
